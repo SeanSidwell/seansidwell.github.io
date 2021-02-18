@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">    <meta charset="utf-8">
+    <meta charset="utf-8">
+    <title>Ceasar's Cipher</title>
+    <meta name="Description" content="Ceasar's Cipher in Javascript">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script type="text/javascript" src="CeasarsCipher.js"></script>
+<!--     <a href="CeasarsCipher.js">file.js</a>
+ -->    <SCript src="CeasarsCipher.js"></SCript>
+    
+</head>
+
+<body>
+    <div class="container-fluid ">
+            <h1 class="text-center text-primary">Ceasar's Cipher</h1>
+
+            <div id="firstP">
+            <p class="text-center">The Ceasar's Cipher is one of the simplest and most widely known encryption techniques. It is a type of substitution cipher in which each letter in the plaintext is replaced by a letter some fixed number of positions down the alphabet. </p>
+            </div>
+
+
+            <h2 class="text-center text-muted">Try it out!</h2>
+            <p class="text-center">Please enter an encrypted phrase.</p>
+                
+            
+            
+            <div class="row myRow form-group">
+                    <div class="myCol col-12 col-md-5 "><textarea placeholder="Enter encrypted text here" id="textArea1" class="form-control textbox" type="text" rows="3"></textarea></div>
+                   
+                    
+                    <div class="myCol col-md-2 col-12 buttonStyle text-center align-self-end text-md-left ">  <button id="button1" onclick="buttonClick()" class="btn btn-primary  ">Submit</button>   </div>
+                        
+                    
+                    
+                </div>
+
+                <div id="outputWell" class="col-md-6 card card-body bg-light wellProperties" >
+                    <h6 class="text-center text-muted">Output</h6>
+                </div>
+               
+                <script >
+                    
+
+function buttonClick()
+{
+    function rot13(param1)
+{
+    /* var strA="SERR PBQR PNZC";
+    var decrpyted = (strA).charCodeAt(20);
+    document.write(decrpyted); */
+
+    
+    var str;
+    var temp;
+    var finalString="";
+    var stringArray = [];
+    var asciiArray = [];
+    var translatedArray = [];
+    str=param1;
+    var phraseLength = str.length;
+   
+    for(var i=0; i<phraseLength;i++)
+    {
+        stringArray[i] = str.charAt(i);
+    }
+
+    for(var i =0; i<str.length;i++)
+    {
+        temp = stringArray[i];
+        asciiArray[i] = temp.charCodeAt(0);
+        
+    }
+    //ASCII array is complete, now do step 3
+
+    for(var i =0; i<str.length;i++)
+    {
+        if(asciiArray[i]>=65 && asciiArray[i]<=90)
+       {     asciiArray[i] = asciiArray[i] + 13;
+                 if(asciiArray[i]>90)
+                 {
+                   asciiArray[i]= asciiArray[i]-26;
+                 }
+         }
+    }
+
+    // step 4
+
+    for(var i =0; i<str.length;i++)
+    {
+        temp=asciiArray[i];
+        translatedArray[i] = String.fromCharCode(temp);
+        
+    }
+
+    for(var i =0; i<str.length;i++)
+    {
+       finalString = finalString + translatedArray[i];
+        
+    }
+
+
+
+    //finish
+      //  document.write(finalString);
+        return finalString;
+        
+    
+    
+}
+
+    var userInput = document.getElementById("textArea1").value;
+    userInput = userInput.toUpperCase();
+    document.getElementById("outputWell").innerHTML = rot13(userInput);
+}
+                    
+                </script>
+
+
+
+                <div class=" card card-body  wellProperties samples">
+                    <h3>Encrypted Phrases</h3>
+                    <p class="text-center">Highlight and drag to reveal these secret phrases</p>
+                    <div>Gurer ner sbegl-rvtug zvyyvba xnatnebbf va Nhfgenyvn naq guerr zvyyvba cyhf vaunovgnagf va Hehthnl. Fb vs gur xnatnebb qrpvqr gb vainqr Hehthnl, rnpu Hehtnlna jvyy unir gb svtug sbhegrra xnatnebbf</div>
+                    <br>
+                    <div>Nyjnlf erzrzore: lbh'er havdhr, whfg yvxr rirelbar ryfr.</div>
+                    <br>
+                    <div>Jr yvir va na ntr jurer cvmmn trgf gb lbhe ubzr orsber gur cbyvpr.</div><br>
+                    <div>Lbh unir n pbhtu? Tb ubzr gbavtug, rng n jubyr obk bs Rk-Ynk. Gbzbeebj lbh'yy or nsenvq gb pbhtu.</div>
+                    <br>
+                    <div>Jr ner Zvpebfbsg. Erfvfgnapr vf shgvyr. Lbh jvyy or nffvzvyngrq.</div>
+
+                </div>
+                
+
+               
+
+
+               
+
+    </div>
+</body>
+
+</html>

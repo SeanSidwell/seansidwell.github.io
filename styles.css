@@ -1,0 +1,1175 @@
+ *
+ {
+     /* Color Palette */
+    --greenPalette: #A4BF8D;
+    --lightBluePalette: #017B9A;
+    --darkBluePalette: #061826;
+    --lavenderPalette: #e9e6ff;
+
+    /* Other Variables */
+    --textForLavenderDiv: black;
+    --overlayHighlight: #F21B3F;
+ }
+
+html
+{
+    scroll-behavior: smooth;
+}
+
+body
+{
+    margin: 0;
+    margin-top: 0;
+    padding: 0;
+    background-color: #061826;  
+} 
+.headerMain
+{
+
+    background-color: grey;
+    margin: 0;
+    background-image: url(pexels-james-wheeler-417074.jpg);
+    background-size: cover ;
+    background-repeat: no-repeat;
+    height: 100vh;
+    background-attachment: fixed;
+    background-blend-mode: multiply;
+
+
+    
+}
+
+
+.arrow
+{
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+}
+.downArrow
+{
+transform: rotate(45deg);
+-webkit-transform: rotate(45deg);
+}
+
+
+
+.center1
+{
+   text-align: center;
+   margin: 0;
+   position: absolute;
+   bottom: 50px;
+   left: 50%;
+   transform: translate(-50%,50%);
+
+   opacity: 0;
+   animation: fadeIn 1s ease-in 8s forwards;
+
+   font-family: 'Truculenta', sans-serif;
+   
+
+   
+}
+
+.myName
+{
+    font-family: 'Marck Script', cursive;
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.arrowText
+{
+    color: white;
+    margin-bottom: 5px;
+}
+
+h1
+{
+    margin-top: 0;
+   
+    line-height: 90vh; /* padding-top: 40vh; */
+    text-align: center;
+
+    color: whitesmoke;
+
+    font-family: 'Times New Roman', Times, serif;
+}
+/* 
+.animatedText
+{
+    -webkit-animation: fadeinout 4s ease-out forwards;
+    
+    animation: fadeinout 4s ease-in forwards;
+}
+
+@-webkit-keyframes fadeinout {
+    0%,100% { opacity: 0; }
+    50% { opacity: 1;
+        transition-delay: 2s; }
+  }
+
+  @keyframes fadeinout {
+    0%,100% { opacity: 0; }
+    50% { opacity: 1;
+        transition-delay: 2s; }
+  }
+ */
+
+
+ span
+ {
+     opacity: 0;
+     transition: all 2s ease;
+ }
+ 
+ span.fade 
+ {
+    opacity: 1;
+ }
+ 
+ span.fade2
+ {
+     opacity: 0;
+     
+     
+     transition: all 2s ease;
+ }
+
+ 
+
+ .fadeParagraph
+ {
+     animation: fadeInOut 2s ease-out;
+     
+ }
+
+ @keyframes fadeInOut
+ {
+     0%
+     {
+        opacity: 0;
+     }
+
+     100%
+     {
+         opacity: 1;
+     }
+ }
+
+ h1
+ {
+     
+ }
+
+ h2
+ {
+     color: white;
+     text-align: center;
+     position: absolute;
+     top: 45%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+     font-size: 2em;
+     
+     animation: fadeIn 1.5s ease-in 5s forwards;
+     opacity: 0;
+
+     font-family: 'Times New Roman', Times, serif;
+
+ }
+
+ @keyframes fadeIn
+ {
+     0%
+     {
+        opacity: 0;
+     }
+
+     100%
+     {
+        opacity: 1;
+     }
+ }
+
+ .logoDiv
+ {
+    position: absolute;
+    /* background-color: green; */
+    width:  120px;
+    height: 120px;
+    margin: 0px;
+    top: 0%;;
+    /* right: 0%; */
+    /* left: 50% */
+    /* transform: translate(-50%, -50%); */
+    margin: 0px;
+
+    
+ }
+
+ .logoDiv img
+ {
+     /* border-radius: 50%; */
+     opacity: 0;
+     animation: fadeIn 1.3s ease-in 8s forwards;
+     width: 100%;
+     height: 100%;
+     
+
+     
+
+     
+     
+ }
+
+ 
+ .portraitDiv
+ {
+    /* position: absolute; */
+    /* background-color: white; */
+    width: 200px;
+    height: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    /* top: 10%; */
+    /* left: 50%; */
+    /* transform: translate(-50%, -50%); */
+    margin-top: 90px;
+    margin-bottom: 15px;
+    /* background-image: url(PXL_20201124_003629948.PORTRAIT_2.jpg); */
+    background-color: #CFD3D4;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 10px solid white;
+    
+    
+ }
+
+
+ .portraitDiv img
+ {
+     --shadowColor: #CFD3D4;
+     /* border-radius: 50%; */
+     /* border: 5px ridge   #CFD3D4; */
+     /* box-shadow: 10px 10px 10px #49412E, -10px 10px 10px  #49412E, 10px -10px 10px var(--shadowColor), -10px -10px 10px var(--shadowColor); */
+     display: block;
+     margin-left: auto;
+     margin-right: auto;
+     /* margin-top: auto; */
+     /* margin-bottom: auto; */
+     padding-top: 12px;
+     background-blend-mode: multiply;
+     /* opacity: 0; */
+     height: 350px;
+     width: 350px;
+     position: relative;
+     left: -80px;
+     top: -80px;
+     
+ }
+
+ 
+
+
+ h3
+ {
+    margin-top: 0;
+   
+    /* line-height: 90vh; */
+    padding-top: 15px;
+    text-align: center;
+    font-size: 2em;
+    color: white;
+    margin-bottom: 0;
+ }
+
+ .biography
+ {
+     margin: 0;
+     color: white;
+     margin-left: auto;
+     padding: 20px;
+     padding-bottom: 100px;
+
+     font-family: 'Marcellus', serif;
+    font-size: 1.2em;
+     
+ }
+
+ .skillsDiv
+ {
+     /* background-color: #017B9A; */
+     padding-bottom: 30px;
+     
+     /* box-shadow: inset 0 0 50px black; */
+     
+ }
+
+ .skillDivOuter
+        {
+            /* width: 100vw; */
+            background-color: #017B9A;
+            box-shadow: inset 0 0 50px black;
+        
+        }
+ 
+ 
+ 
+
+  .grid-item .fab {
+    padding: 20px;
+    font-size: 100px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+  }
+
+  .fa-css3
+  {
+     font-size: 6em;
+      
+  }
+
+ 
+   /* 
+
+/* 
+ .fa-facebook {
+    background: #3B5998;
+    color: white;
+  }  */
+
+  
+
+.mySkills
+{
+    padding-top: 50px ;
+    /* padding-bottom: 20px; */
+    font-family: 'Montserrat', sans-serif;} 
+
+.myProjects
+{
+    font-family: 'Radley', serif;
+    padding-top: 25px;
+    color: var(--textForLavenderDiv);
+    
+
+}
+.skillsParagraph
+{
+    color: white;
+    padding-bottom: 20px;
+    text-align: center;
+    font-family: 'Comfortaa', cursive;
+        line-height: 120%;
+    margin-left: 6vw;
+    margin-right: 6vw;
+    
+}
+
+.projectsParagraph
+{
+    color: var(--textForLavenderDiv);
+    /* padding-bottom: 10px; */
+    text-align: center;
+    font-family: 'Comfortaa', cursive;
+        line-height: 120%;
+    margin-left: 6vw;
+    margin-right: 6vw;
+    
+}
+
+.gridContainer
+{
+    /* background-color: white; */
+    display: grid;
+    grid-template-columns:1fr 1fr;
+    grid-gap: 10px;
+    
+    
+    
+}
+
+.gridContainer2
+{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 50px;
+}
+
+.grid2-item
+{
+    width: 1fr;
+    height: 200px;
+    border-radius: 10px;
+    border:  3px solid black;
+}
+
+.grid2-item-1
+{
+    
+    background-image: url(ConstructionSite\ Screenshot.png);
+    background-size: cover ;
+    background-repeat: no-repeat;
+    
+    
+}
+
+.grid2-item-2
+{
+    
+
+    background-image: url(CipherScreenshot.png);
+    background-size: cover ;
+    background-repeat: no-repeat;
+}
+
+.grid2-item img
+{
+    border-radius: 5%;
+}
+.grid-item
+{
+    background-color: pink;
+    border: solid black 2px;
+    text-align: center;
+    border-radius: 10%;
+    
+} 
+
+.grid-item-1
+{
+    text-indent: -7px;
+    background-color: #F16529;
+    color: whitesmoke;
+    order: 2;
+}
+
+
+
+
+
+.grid-item-2
+{
+    background-color: #2299F8;
+    color: whitesmoke;
+    text-indent: -12px;
+    height: 140px;
+    order: 1;
+    
+}
+
+.grid-item-3
+{
+    background-color: black;
+    color: yellow;
+    text-indent: -11px;
+    border: solid white 2px;
+    order: 3;
+}
+.grid-item-4
+{
+    background-color: whitesmoke;
+    color: purple;
+    text-indent: -13px;
+    order: 4;
+}
+.fa-js
+{
+    font-size: 100px;
+}
+
+.grid-item-5
+{
+    background-color: whitesmoke;
+    color: black;
+    text-indent: -20px;
+    order: 5;
+}
+
+.grid-item-6
+{
+    background-color: black;
+    border: solid white 2px;
+    order: 6;
+
+    
+}
+
+.cppLogo
+{
+    margin-top: 19px;
+    margin-bottom: 16px;
+    
+}
+
+
+
+.gridContainersParent
+{
+    /* background-color: red; */
+    width: 80vw;
+    
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+#skillDescription
+{
+    color: white;
+    margin-left: 6vw;
+    margin-right: 6vw;
+    height: 150px;
+    padding-top: 10px;
+    padding-bottom: 15px;
+    margin-bottom: 0;
+    
+    font-family: 'Comfortaa', cursive;
+        line-height: 120%;
+}
+
+
+.projectsDiv
+{
+    /* background-color:  #E9E6FF; */
+    /* box-shadow: inset 0 0 20px black; */
+
+    padding-bottom: 100px;
+    padding-top: 50px;
+}
+
+.projectsDivOuter
+{
+    background-color:  #E9E6FF;
+    box-shadow: inset 0 0 20px black;
+
+}
+
+.overlay
+{
+    background-color: rgba(0, 0, 0, 0.849);
+    position: relative;
+    height: 100.5%;
+    width: 100.2%;
+    /* margin-top: -141px; */
+    /* margin-left: -3px; */
+    border-radius: 6px;
+    z-index: 1;
+    opacity: 0;
+    /* border: 2px solid black; */
+    
+    cursor: pointer;
+
+    overflow: hidden;
+    
+    
+} 
+
+.overlay:hover
+{
+    animation: fadeIn 0.75s ease-in  forwards;
+}
+
+
+h4
+{
+    margin: 0;
+    padding-top: 20px;
+    text-align: center;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.overlayParagraph
+{
+    text-align: center;
+    color: white;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-family: 'Gruppo', cursive;
+    font-size: 0.9em;
+}
+
+.overlayButton
+{
+    font-size: 1.3em;
+    border-radius: 50px;
+    border: 2px solid var(--overlayHighlight);
+    font-family: 'Raleway', sans-serif;
+    padding-left: 10px;
+    padding-right: 10px;
+     
+    
+}
+
+.buttonContainer
+{
+    text-align: center;
+    
+}
+
+
+h5
+{
+    text-align: center;
+    color: var(--textForLavenderDiv);
+    margin: 0;
+    padding-top: 90px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-family: 'Marcellus', serif;
+    font-size: 1.1em;
+
+
+}
+
+.contactButton
+{
+    
+    font-size: 1.5em;
+    border-radius: 50px;
+    border: 3px solid black;
+    font-family: 'Raleway', sans-serif;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-weight: bold;
+    background-color: white;
+    
+    cursor: pointer;
+}
+
+.linksDiv
+{
+    /* background-color: rgb(155, 23, 45); */
+    background-image: url(pexels-roberto-shumski-1903702.jpg);
+    background-size: cover ;
+    background-repeat: no-repeat;
+    padding-bottom: 250px;
+    padding-top: 250px;
+    background-color: grey;
+    background-blend-mode: multiply;
+    background-attachment: fixed;
+        
+    box-shadow: inset 0 0 20px 2px black;
+}
+
+.flexboxContainer
+{
+    /* background-color: orange; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 250px
+    
+    
+}
+
+
+h6
+{
+    margin: 0;
+    color: white;
+    font-size: 2em;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+.bigButton
+{
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 30px;
+    border: 4px solid black;
+    font-size: 2em;
+    width: 85vw;
+    cursor: pointer;
+
+}
+
+.googleGradientDiv
+{
+    
+    background: rgb(66,133,244);
+    background: linear-gradient(90deg, rgba(66,133,244,1) 10%, rgba(234,67,53,1) 29%, rgba(251,188,5,1) 59%, rgba(52,168,83,1) 95%);
+    padding: 4px;
+    border-radius: 30px;
+    width: fit-content;
+    width: -moz-fit-content;
+    
+    
+    /* align-items: center; */
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 1px 1px 5px black;
+}
+
+
+.emailButton
+{
+    border-color: transparent;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.9em;
+   
+}
+
+.fa-envelope
+{
+    color: black;
+}
+
+.githubButton
+{
+    background-color: black;
+    color: whitesmoke;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+.fa-github
+{
+    
+    color: white;
+    
+}
+
+
+
+.instagramButton
+{
+    background: #f09433; 
+background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); 
+background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
+
+color: rgb(235, 235, 235);
+border-color: black;
+border-width: 0px;
+box-shadow: 1px 1px 5px black;
+font-family: Arial, Helvetica, sans-serif;
+}
+
+.facebookButton
+{
+    background-color: #2b4170; /* fallback color */
+	background: -moz-linear-gradient(top, #3b5998, #2b4170);
+	background: -ms-linear-gradient(top, #3b5998, #2b4170);
+	background: -webkit-linear-gradient(top, #3b5998, #2b4170);
+	border: 1px solid #2b4170;
+
+    color: white;
+    box-shadow: 1px 1px 5px black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+hr
+{
+    border-top: 5px solid white;
+    margin: 0;
+}
+
+
+.logoDivFooter
+{
+   /* position: absolute; */
+   /* background-color: green; */
+   width: 150px;
+   height: 150px;
+   margin-left: auto;
+   margin-right: auto;
+   margin-top: 50px;
+   /* top: 0%; */
+   /* left: 50% */
+   /* transform: translate(-50%, -50%); */
+
+   
+}
+
+.logoDivFooter img
+{
+    /* border-radius: 50%; */
+    width: 100%;
+}
+
+.footerQuote
+{
+    color: white;
+    text-align: center;
+    font-family: 'Mrs Saint Delafield', cursive;
+    font-size: 1.8em;
+    
+}
+
+.footerStamp
+{
+    color: white;
+    text-align: center;
+    padding-bottom: 100px;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 0.8em;
+
+}
+
+
+@media screen and (min-width: 426px)
+{
+    .gridContainer
+    {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .biography
+    {
+        font-size: 3vh;
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-bottom: 150px;
+        padding-top: 100px;
+    }
+
+    .myName
+    {
+        font-size: 9vw;
+    }
+
+    .portraitDiv
+    {
+        width: 300px;
+        height: 300px;
+        /* overflow: visible; */
+    }
+
+    .portraitDiv img
+    {
+        width: 400px;
+        height: 400px;
+        top: -50px;
+        left: -50px;
+        
+        
+    }
+
+    .logoDiv
+    {
+        width: 25vw;
+        max-width: 210px;
+        height: auto;
+    }
+
+    h1
+    {
+        font-size: 6vh;
+    }
+   h2
+   {
+       font-size: 4vh;
+       
+   }
+    
+   .center1
+   {
+       font-size: 3vh;
+       line-height: 30px;
+       bottom: 70px; 
+       /* opacity: 1; */
+   }
+
+   .mySkills
+   {
+       font-size: 3em;
+       padding-top: 100px;
+   }
+   
+   .skillsParagraph
+   {
+       font-size: 2.5vh;
+   }
+    
+   #skillDescription
+   {
+       font-size: 2.3vh;
+       padding-top: 50px;
+       padding-bottom: 100px;
+   }
+
+   .myProjects
+   {
+    font-size: 3em;
+    padding-top: 50px;
+   }
+
+   .projectsParagraph
+   {
+       font-size: 2.5vh;
+   }
+
+   h5
+   {
+       font-size: 3vh;
+   }
+
+   .contactButton
+   {
+       font-size: 3vh;
+   }
+
+    .grid2-item
+{
+    
+    height: 40vh;
+   
+}
+
+    .flexboxContainer
+    {
+        min-height: 250px;
+        height: 30vh;
+    }
+
+    .logoDivFooter
+    {
+        width: 30vh;
+        height: 30vh;
+
+        /* background-color: green; */
+    }
+
+    .footerQuote
+    {
+        font-size: 4vh;
+    }
+
+    .footerStamp
+    {
+        font-size: 1.75vh;
+    }
+
+    /* overlay */
+    h4
+    {
+        font-size: 4vh;
+    }
+
+    .overlayParagraph
+    {
+        font-size: 3vh;
+    }
+    
+    .overlayButton
+    {
+        font-size: 4vh;
+    }
+
+    .skillsDiv
+    {
+        padding-bottom: 10vh;
+    }
+
+    .bigButton
+    {
+        font-size: 4vh;
+    }
+
+   .overlay
+   {
+       /* height: 102%; */
+       /* width: 102%; */
+       top: -2px;
+       padding-top: 2px;
+       margin-left: -1px
+   }
+}
+
+
+@media screen and (min-width: 1024px)
+{
+    .gridContainer
+    {
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    }
+
+    .logoDiv
+    {
+        width: 15vw;
+        max-width: 210px;
+       
+    }
+    .logoDiv img
+    {
+        /* opacity: 1; */
+    }
+
+    .introduction
+    {
+        height: 105vh;
+    }
+    .faceAndName
+    {
+        /* background-color: green; */
+        float: left;
+        padding-left: 5vw;
+        padding-top: 150px;
+    }
+    
+    .myName
+    {
+        font-size: 4em;
+    }
+    .biography
+    {
+        margin: 0;
+        padding: 0;
+        /* float: right; */
+        text-align: left;
+        position: relative;
+        padding-top: 300px;
+        margin-left: 475px; 
+        margin-right: 50px;
+        padding-left: 1vw;
+        padding-right: 1vw;
+        text-align: left;
+        font-size: 2.7vw;
+        
+    }
+
+    .mySkills
+    {
+        padding-bottom: 10px;
+        font-size: 3.5em;
+        text
+    }
+
+    #skillDescription
+    {
+        font-size: 1.85em;
+    }
+    
+/* 
+    .biographyDiv
+    {
+        float: right;
+        width: 500px;
+    } */
+
+
+    .projectsParagraph
+    {
+        font-size: 1.5em;
+        padding-bottom: 20px;
+    }
+
+    .grid2-item
+    {
+        height: 65vh;
+    }
+
+    h4
+    {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    .overlayParagraph
+    {
+        font-size: 2em;
+        padding-left: 40px;
+        padding-right: 40px;
+        padding-bottom: 40px;
+    }
+    .overlayButton
+    {
+        font-size: 3em;
+    }
+
+    h5
+    {
+        font-size: 2em;
+        padding-top: 200px;
+    }
+
+    .contactButton
+    {
+        font-size: 2em;
+        margin-bottom: 50px;
+    }
+
+    .bigButton
+    {
+        max-width: 872px;
+        height: 8vh;
+        font-size: 4vh;
+    }
+
+    .flexboxContainer
+    {
+        height: 50vh;
+    }
+
+}
+
+/* font size cutoffs */
+@media screen and (min-width: 1164px)
+    {
+        .biography
+        {
+            font-size: 31px;
+        }
+    }
+
+
+
+
+    @media screen and (min-width: 1350px)
+    {
+        
+
+        .introduction
+        {
+            max-width: 1350px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .skillsDiv
+        {
+            max-width: 1350px;
+            margin-left: auto;
+            margin-right: auto;
+            box-shadow: none;
+            z-index: 1;
+        }
+        .gridContainersParent
+        {
+            max-width: 1080px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .skillDivOuter
+        {
+            /* width: 100vw; */
+            background-color: #017B9A;
+            box-shadow: inset 0 0 50px black;
+        
+        }
+
+        .projectsDiv
+        {
+            max-width: 1350px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .projectsDivOuter
+        {
+            /* width: 100vw; */
+        }
+    }
+
+
