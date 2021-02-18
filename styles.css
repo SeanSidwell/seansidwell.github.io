@@ -690,6 +690,12 @@ h6
     font-size: 2em;
     width: 85vw;
     cursor: pointer;
+    
+    white-space: nowrap;
+    overflow: hidden;
+	
+	
+
 
 }
 
