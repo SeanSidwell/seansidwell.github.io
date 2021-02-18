@@ -1,4 +1,3 @@
-
  const txt = document.querySelector(".fancy"); 
  const strText = txt.textContent;
  const splitText = strText.split("");
@@ -8,15 +7,8 @@ txt.textContent = "";
  {
        txt.innerHTML += "<span>" + splitText[i] + "</span>";
  }
-  var char = 0;
-  var timer;
-
- function animateOnLoad()
- {
-  
-    var timer = setInterval(onTick, 150);
- }
-
+var char = 0;
+var timer = setInterval(onTick, 150);
 function onTick()
 {
     var span = txt.querySelectorAll('span')[char];
@@ -24,7 +16,6 @@ function onTick()
     // console.log(span.classList);
     span.classList.add('fade');
     char++;
-    debugger;
     if(char === splitText.length)
     {
         
@@ -44,14 +35,9 @@ function complete()
 }
 
 /* 
-
 var spanArray = txt.querySelectorAll('span');
 for(var i=0;i<splitText.length;i++)
 {
     spanArray[i].classList.add('fade2');
 }
  */
-
-
-    window.addEventListener("load", animateOnLoad());
-    // animateOnLoad();
