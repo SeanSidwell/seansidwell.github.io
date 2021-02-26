@@ -2,8 +2,8 @@ var htmlText= "HTML5 is the backbone of every website that exists today. It is a
 var cssText = "Cascading Style Sheets, abbreviated as CSS3, is the fundamental styling element for all websites. It is used in congruence with HTML and Javascript to breathe color, size, shape, and animation into the world wide web."
 var javascriptText = "Javascript, otherwise known as JS, is a high level object-oriented scripting language. Javascript has the ability to work with HTML and CSS to provide unlimited customization, functionality, calculation, and capability."
 var bootstrapText = "Bootstrap is an open source framework that allows for CSS to be rapidly Implemented. It is great for prototypes, as well as for any project where the design of the user interface is not the primary goal."
-var unityText = "Unity is a multi-purpose engine, that uses the C# programming language, to creating games, movies, simulations, and visualizations. This is one of my hobbies that allows me to further display my passion for software development."
-var cppText = 'C++ is an object-oriented programming language that emphasizes optimization of computer memory to produce highly efficient programs and application. C++ has been an industry standard for decades, meaning it has incredible library support as well as some of the best debugging environments.'
+var unityText = "Unity is a multi-purpose engine, that uses the C# programming language, to create games, movies, simulations, and visualizations. This is a hobby that allows me to further display my passion for software development."
+var cppText = 'C++ is an object-oriented programming language that emphasizes optimization of computer memory to produce highly efficient programs and applications. C++ has been an industry standard for decades, meaning it has incredible library support as well as some of the best debugging environments.'
 
 document.getElementById("htmlBox").onclick = function()
 {
