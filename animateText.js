@@ -1,4 +1,4 @@
- $(document).ready(function(){
+ $(window).ready(function(){
 
     const txt = document.querySelector(".fancy"); 
     const strText = txt.textContent;
