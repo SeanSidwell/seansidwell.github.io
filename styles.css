@@ -94,6 +94,7 @@ h1
     text-align: center;
 
     color: whitesmoke;
+    opacity: 0;
 
     font-family: 'Times New Roman', Times, serif;
 }
