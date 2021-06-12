@@ -38,7 +38,7 @@ if (timer == null)
                 console.log(spanArray[i].classList);
                 spanArray[i].classList.add('fade2');
             } */
- function fadeOut()
+ /* function fadeOut()
  {
      if (timer==null)
      {
@@ -70,4 +70,4 @@ if (timer == null)
         }
         
      }
- }
+ } */
