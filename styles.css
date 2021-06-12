@@ -175,7 +175,7 @@ h1
      transform: translate(-50%, -50%);
      font-size: 2em;
      
-     animation: fadeIn 1.5s ease-in 5.5s forwards;
+     animation: fadeIn 1.5s ease-in 6s forwards;
      opacity: 0;
 
      font-family: 'Times New Roman', Times, serif;
