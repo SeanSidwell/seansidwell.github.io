@@ -1,5 +1,7 @@
  $(window).ready(function(){
 
+    jQuery('h1').css('opacity', '1');
+
     const txt = document.querySelector(".fancy"); 
     const strText = txt.textContent;
     const splitText = strText.split("");
