@@ -26,7 +26,7 @@
        // console.log(span.classList);
        span.classList.add('fade');
        char++;
-       debugger;
+      
        if(char === splitText.length)
        {
            
