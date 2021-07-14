@@ -1,1 +1,1 @@
-# seansidwell.github.io
+# seansidwell.com
