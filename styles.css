@@ -25,7 +25,6 @@ body
 } 
 .headerMain
 {
-
     background-color: grey;
     margin: 0;
     background-image: url(pexels-james-wheeler-417074.jpg);
@@ -175,7 +174,7 @@ h1
      transform: translate(-50%, -50%);
      font-size: 2em;
      
-     animation: fadeIn 1.5s ease-in 6s forwards;
+     animation: fadeIn 1.5s ease-in 5.5s forwards;
      opacity: 0;
 
      font-family: 'Times New Roman', Times, serif;
@@ -473,9 +472,11 @@ h1
 }
 .grid-item-4
 {
-    background-color: whitesmoke;
-    color: purple;
-    text-indent: -13px;
+    background-color: black;
+    color: wheat;
+    text-indent: -8px;
+    border: solid white 2px;
+
     order: 4;
 }
 .fa-js
@@ -485,10 +486,18 @@ h1
 
 .grid-item-5
 {
-    background-color: whitesmoke;
-    color: black;
-    text-indent: -20px;
+    height: 140px;
+    background-color: black;
+    color: snow;
+    text-indent: 0px;
+    border: solid white 2px;
+    
     order: 5;
+}
+
+.fa-database{
+    font-size: 100px;
+    padding-top: 18px;
 }
 
 .grid-item-6
@@ -603,7 +612,7 @@ h4
     font-family: 'Raleway', sans-serif;
     padding-left: 10px;
     padding-right: 10px;
-    
+
     cursor: pointer;
      
     
@@ -693,12 +702,9 @@ h6
     font-size: 2em;
     width: 85vw;
     cursor: pointer;
-    
+
     white-space: nowrap;
     overflow: hidden;
-	
-	
-
 
 }
 
